@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Nurzan</title>
+  <meta name="description" content="Portofolio Muhammad Arfian Yoga Pratama — Calon Entrepreneur sukses dengan semangat belajar teknologi dan bisnis.">
+  <title>Portofolio Arfian</title>
+
   <style>
     /* ====== GLOBAL STYLE ====== */
     * {
@@ -18,6 +20,10 @@
       overflow-x: hidden;
     }
 
+    h1, h2, h3, h4 {
+      color: #2b2b2b;
+    }
+
     /* ====== SLIDE 1 (HOME) ====== */
     .home {
       height: 100vh;
@@ -27,8 +33,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #2b2b2b;
       position: relative;
+      color: #2b2b2b;
       overflow: hidden;
     }
 
@@ -52,7 +58,7 @@
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
+      border: 4px solid #fff;
       box-shadow: 0 4px 20px rgba(0,0,0,0.15);
       margin-bottom: 20px;
       z-index: 1;
@@ -78,7 +84,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .btn-next {
+    .btn-next, .btn-kirim {
       margin-top: 30px;
       padding: 12px 28px;
       background-color: #4c8cff;
@@ -91,42 +97,11 @@
       z-index: 1;
     }
 
-    .btn-next:hover {
+    .btn-next:hover, .btn-kirim:hover {
       background-color: #3a75e4;
       transform: scale(1.05);
     }
 
-  </style>
-</head>
-<body>
-
-  <!-- SLIDE 1: HOME -->
-  <section class="home" id="home">
-    <img src="Arfian1.jpg" alt="Foto Profil Arfian" class="profile-img">
-    <h1>Halo, Saya <span style="color:#4c8cff;">Arfian</span></h1>
-    <p>Calon entrepreneur sukses ✨</p>
-    <button class="btn-next" onclick="scrollToProfil()">Lihat Profil</button>
-  </section>
-
-  <!-- SLIDE 2: PROFIL -->
-  <section class="profil" id="profil">
-    <div class="profil-container">
-      <div class="profil-foto">
-        <img src="Arfian1.jpg" alt="Foto Arfian">
-      </div>
-      <div class="profil-info">
-        <h2>Tentang Saya</h2>
-        <p><strong>Nama:</strong> Muhammad Arfian Yoga Pratama</p>
-        <p><strong>Alamat:</strong> Jln. Swadaya 1 GG. Dukuh</p>
-        <p><strong>Cita-cita:</strong> Entrepreneur </p>
-        <p><strong>Hobi:</strong>Berenang</p>
-        <p><strong>Email:</strong> Papikimung@gmail.com</p>
-        <button class="btn-next" onclick="scrollToMateri()">Lihat Rangkuman Materi</button>
-      </div>
-    </div>
-  </section>
-
-  <style>
     /* ====== SLIDE 2 (PROFIL) ====== */
     .profil {
       min-height: 100vh;
@@ -180,93 +155,16 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
 
-  <script>
-    // Scroll halus ke rangkuman materi
-    function scrollToMateri() {
-      const nextSection = document.getElementById("materi");
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  </script>
-
-  <!-- SLIDE 3: RANGKUMAN MATERI DENGAN GAMBAR -->
-  <section class="materi" id="materi">
-    <div class="materi-container">
-      <h2>Rangkuman Materi</h2>
-      <p class="materi-subtitle">Belajar tentang Control Panel Hosting dengan cara yang mudah dan menyenangkan!</p>
-
-      <div class="materi-card besar">
-        <h3>🖥️ Control Panel Hosting</h3>
-
-        <!-- Gambar utama -->
-        <img src="controlpanel-main1.jpg" alt="Control Panel Hosting" class="materi-img">
-
-        <h4>1. Pengertian</h4>
-        <div class="materi-item">
-          <img src="idea.png" alt="Pengertian" class="icon">
-          <p>Control panel hosting itu seperti **remot ajaib** untuk mengatur rumah website kita di internet. Dengan ini, kita bisa mengatur semua isi website tanpa harus pusing pakai perintah rumit.</p>
-        </div>
-
-        <h4>2. Dasar-Dasar</h4>
-        <div class="materi-item">
-          <img src="menu.png" alt="Dasar Dasar" class="icon">
-          <p>Di dalam control panel, ada banyak tombol dan menu. Kita bisa membuat email, mengatur file, melihat siapa yang mengunjungi website, dan banyak hal seru lainnya!</p>
-        </div>
-
-        <h4>3. Manfaat</h4>
-        <div class="materi-item">
-          <img src="benefit.png" alt="Manfaat" class="icon">
-          <p>Dengan control panel, semuanya jadi **lebih mudah**! Tidak perlu jago komputer, karena tampilannya sudah seperti aplikasi biasa yang tinggal diklik.</p>
-        </div>
-
-        <h4>4. Fitur-Fitur</h4>
-        <img src="features.png" alt="Fitur-fitur" class="materi-img kecil">
-        <ul>
-          <li>📂 File Manager – untuk menyimpan dan mengatur file website.</li>
-          <li>📧 Email – untuk membuat email dengan nama website sendiri.</li>
-          <li>📊 Statistik – melihat berapa orang yang membuka website kita.</li>
-          <li>🔒 Keamanan – menjaga website supaya tidak diretas.</li>
-        </ul>
-
-        <h4>5. Cara Mengakses</h4>
-        <div class="materi-item">
-          <img src="login.png" alt="Login" class="icon">
-          <p>Untuk membuka control panel, kita tinggal masuk ke alamat seperti <b>namadomain.com/cpanel</b>, lalu login dengan username dan password dari penyedia hosting.</p>
-        </div>
-
-        <h4>6. Alur Kerja</h4>
-        <div class="materi-item">
-          <img src="workflow.png" alt="Alur kerja" class="icon">
-          <p>Kita mengatur website lewat control panel → control panel memberi perintah ke server → server menjalankan perintah → website kita berubah sesuai keinginan.</p>
-        </div>
-
-        <h4>7. Macam-Macam Control Panel Hosting</h4>
-        <img src="varieties.png" alt="Macam-macam control panel" class="materi-img kecil">
-        <ul>
-          <li>🌐 <b>cPanel</b> – paling populer dan mudah digunakan.</li>
-          <li>⚙️ <b>Plesk</b> – tampilannya modern dan cocok untuk Windows.</li>
-          <li>🧩 <b>DirectAdmin</b> – ringan dan cepat.</li>
-          <li>💡 <b>CyberPanel</b> – gratis dan cocok untuk belajar.</li>
-        </ul>
-      </div>
-
-      <button class="btn-next" onclick="scrollToKontak()">Hubungi Saya</button>
-    </div>
-  </section>
-
-  <style>
-    /* ====== SLIDE 3 (DENGAN GAMBAR) ====== */
+    /* ====== SLIDE 3 (RANGKUMAN MATERI) ====== */
     .materi {
       min-height: 100vh;
       background: linear-gradient(180deg, #f8faff, #eaf2ff);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 80px 10%;
       flex-direction: column;
+      padding: 80px 10%;
       text-align: center;
     }
 
@@ -288,7 +186,7 @@
       font-size: 1rem;
     }
 
-    .materi-card.besar {
+    .materi-card {
       background-color: white;
       border-radius: 20px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.1);
@@ -301,7 +199,6 @@
 
     .materi-card h3 {
       text-align: center;
-      color: #2b2b2b;
       font-size: 1.5rem;
       margin-bottom: 20px;
     }
@@ -313,11 +210,11 @@
     }
 
     .materi-card ul {
-      list-style: none;
-      padding-left: 10px;
+      list-style: disc;
+      padding-left: 20px;
     }
 
-    .materi-card ul li {
+    .materi-card li {
       margin-bottom: 8px;
     }
 
@@ -345,47 +242,8 @@
       display: block;
       margin: 10px auto;
     }
-  </style>
 
-  <script>
-    function scrollToKontak() {
-      const nextSection = document.getElementById("kontak");
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  </script>
-
-  <!-- SLIDE 4: KONTAK / PENUTUP -->
-  <section class="kontak" id="kontak">
-    <div class="kontak-container">
-      <h2>Hubungi Saya</h2>
-      <p class="kontak-desc">Kalau kamu ingin tahu lebih banyak tentang saya atau sekadar menyapa, silakan kirim pesan di bawah ini 👋</p>
-
-      <form class="kontak-form" onsubmit="return kirimPesan(event)">
-        <input type="text" id="nama" placeholder="Nama kamu" required>
-        <input type="email" id="email" placeholder="Email kamu" required>
-        <textarea id="pesan" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
-        <button type="submit" class="btn-kirim">Kirim Pesan</button>
-      </form>
-
-      <div class="sosmed">
-        <p>Atau hubungi lewat:</p>
-        <div class="ikon-sosmed">
-          <a href="mailto:papikimung@email.com" title="Email"><img src="img/email.png" alt="Email"></a>
-          <a href="https://wa.me/6285692928035" target="_blank" title="WhatsApp"><img src="img/whatsapp.png" alt="WhatsApp"></a>
-          <a href="https://instagram.com/Arfian_91_" target="_blank" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
-        </div>
-      </div>
-
-      <footer>
-        <p>© 2025 Arfian | Dibuat dengan 💙 menggunakan HTML, CSS & JavaScript</p>
-      </footer>
-    </div>
-  </section>
-
-  <style>
-    /* ====== SLIDE 4 (KONTAK / PENUTUP) ====== */
+    /* ====== SLIDE 4 (KONTAK) ====== */
     .kontak {
       min-height: 100vh;
       background: linear-gradient(180deg, #eaf2ff, #f9fbff);
@@ -427,7 +285,6 @@
       border: 1px solid #ccc;
       border-radius: 10px;
       font-size: 1rem;
-      width: 100%;
       transition: 0.3s;
     }
 
@@ -435,23 +292,7 @@
     .kontak-form textarea:focus {
       outline: none;
       border-color: #4c8cff;
-      box-shadow: 0 0 8px rgba(76, 140, 255, 0.2);
-    }
-
-    .btn-kirim {
-      background-color: #4c8cff;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      padding: 12px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn-kirim:hover {
-      background-color: #3a73e0;
-      transform: scale(1.03);
+      box-shadow: 0 0 8px rgba(76,140,255,0.2);
     }
 
     .sosmed p {
@@ -474,32 +315,141 @@
       color: #777;
       font-size: 0.9rem;
     }
-  </style>
 
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: HOME -->
+  <section class="home" id="home">
+    <img src="img/Arfian1.jpg" alt="Foto Profil Arfian" class="profile-img">
+    <h1>Halo, Saya <span style="color:#4c8cff;">Arfian</span></h1>
+    <p>Calon entrepreneur sukses ✨</p>
+    <button class="btn-next" onclick="scrollToSection('profil')">Lihat Profil</button>
+  </section>
+
+  <!-- SLIDE 2: PROFIL -->
+  <section class="profil" id="profil">
+    <div class="profil-container">
+      <div class="profil-foto">
+        <img src="img/Arfian1.jpg" alt="Foto Arfian">
+      </div>
+      <div class="profil-info">
+        <h2>Tentang Saya</h2>
+        <p><strong>Nama:</strong> Muhammad Arfian Yoga Pratama</p>
+        <p><strong>Alamat:</strong> Jln. Swadaya 1 GG. Dukuh</p>
+        <p><strong>Cita-cita:</strong> Entrepreneur</p>
+        <p><strong>Hobi:</strong> Berenang</p>
+        <p><strong>Email:</strong> Papikimung@gmail.com</p>
+        <button class="btn-next" onclick="scrollToSection('materi')">Lihat Rangkuman Materi</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: RANGKUMAN MATERI -->
+  <section class="materi" id="materi">
+    <div class="materi-container">
+      <h2>Rangkuman Materi</h2>
+      <p class="materi-subtitle">Belajar tentang Control Panel Hosting dengan cara yang mudah dan menyenangkan!</p>
+
+      <div class="materi-card">
+        <h3>🖥️ Control Panel Hosting</h3>
+        <img src="img/controlpanel-main1.jpg" alt="Control Panel Hosting" class="materi-img">
+
+        <h4>1. Pengertian</h4>
+        <div class="materi-item">
+          <img src="img/idea.png" alt="Ikon Pengertian" class="icon">
+          <p>Control panel hosting itu seperti <strong>remot ajaib</strong> untuk mengatur rumah website kita di internet. Dengan ini, kita bisa mengatur semua isi website tanpa harus pusing pakai perintah rumit.</p>
+        </div>
+
+        <h4>2. Dasar-Dasar</h4>
+        <div class="materi-item">
+          <img src="img/menu.png" alt="Ikon Menu" class="icon">
+          <p>Di dalam control panel, ada banyak tombol dan menu. Kita bisa membuat email, mengatur file, melihat siapa yang mengunjungi website, dan banyak hal seru lainnya!</p>
+        </div>
+
+        <h4>3. Manfaat</h4>
+        <div class="materi-item">
+          <img src="img/benefit.png" alt="Ikon Manfaat" class="icon">
+          <p>Dengan control panel, semuanya jadi <strong>lebih mudah</strong>! Tidak perlu jago komputer, karena tampilannya sudah seperti aplikasi biasa yang tinggal diklik.</p>
+        </div>
+
+        <h4>4. Fitur-Fitur</h4>
+        <img src="img/features.png" alt="Fitur Control Panel" class="materi-img kecil">
+        <ul>
+          <li>📂 File Manager – untuk menyimpan dan mengatur file website.</li>
+          <li>📧 Email – untuk membuat email dengan nama website sendiri.</li>
+          <li>📊 Statistik – melihat berapa orang yang membuka website kita.</li>
+          <li>🔒 Keamanan – menjaga website supaya tidak diretas.</li>
+        </ul>
+
+        <h4>5. Cara Mengakses</h4>
+        <div class="materi-item">
+          <img src="img/login.png" alt="Ikon Login" class="icon">
+          <p>Untuk membuka control panel, masuk ke alamat seperti <b>namadomain.com/cpanel</b>, lalu login dengan username dan password dari penyedia hosting.</p>
+        </div>
+
+        <h4>6. Alur Kerja</h4>
+        <div class="materi-item">
+          <img src="img/workflow.png" alt="Ikon Alur Kerja" class="icon">
+          <p>Kita mengatur website lewat control panel → control panel memberi perintah ke server → server menjalankan perintah → website kita berubah sesuai keinginan.</p>
+        </div>
+
+        <h4>7. Macam-Macam Control Panel Hosting</h4>
+        <img src="img/varieties.png" alt="Macam-macam Control Panel" class="materi-img kecil">
+        <ul>
+          <li>🌐 <b>cPanel</b> – paling populer dan mudah digunakan.</li>
+          <li>⚙️ <b>Plesk</b> – tampilannya modern dan cocok untuk Windows.</li>
+          <li>🧩 <b>DirectAdmin</b> – ringan dan cepat.</li>
+          <li>💡 <b>CyberPanel</b> – gratis dan cocok untuk belajar.</li>
+        </ul>
+      </div>
+
+      <button class="btn-next" onclick="scrollToSection('kontak')">Hubungi Saya</button>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: KONTAK -->
+  <section class="kontak" id="kontak">
+    <div class="kontak-container">
+      <h2>Hubungi Saya</h2>
+      <p class="kontak-desc">Kalau kamu ingin tahu lebih banyak tentang saya atau sekadar menyapa, silakan kirim pesan di bawah ini 👋</p>
+
+      <form class="kontak-form" onsubmit="return kirimPesan(event)">
+        <input type="text" id="nama" placeholder="Nama kamu" required>
+        <input type="email" id="email" placeholder="Email kamu" required>
+        <textarea id="pesan" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
+        <button type="submit" class="btn-kirim">Kirim Pesan</button>
+      </form>
+
+      <div class="sosmed">
+        <p>Atau hubungi lewat:</p>
+        <div class="ikon-sosmed">
+          <a href="mailto:papikimung@gmail.com" title="Email"><img src="img/email.png" alt="Ikon Email"></a>
+          <a href="https://wa.me/6285692928035" target="_blank" title="WhatsApp"><img src="img/whatsapp.png" alt="Ikon WhatsApp"></a>
+          <a href="https://instagram.com/Arfian_91_" target="_blank" title="Instagram"><img src="img/instagram.png" alt="Ikon Instagram"></a>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 Arfian | Dibuat dengan 💙 menggunakan HTML, CSS & JavaScript</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ====== SCRIPT ====== -->
   <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+
     function kirimPesan(event) {
       event.preventDefault();
       const nama = document.getElementById("nama").value;
-      const email = document.getElementById("email").value;
-      const pesan = document.getElementById("pesan").value;
-
       alert(`Terima kasih, ${nama}! Pesanmu sudah dikirim 😊`);
       document.querySelector(".kontak-form").reset();
       return false;
-    }
-
-    function scrollToKontak() {
-      document.getElementById("kontak").scrollIntoView({ behavior: "smooth" });
-    }
-  </script>
-
-  <script>
-    // Fungsi scroll halus ke slide berikutnya
-    function scrollToProfil() {
-      const nextSection = document.getElementById("profil");
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: "smooth" });
-      }
     }
   </script>
 
