@@ -1,3 +1,15 @@
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Tutup card lain jika terbuka
+    cards.forEach(c => {
+      if (c !== card) c.classList.remove('active');
+    });
+    // Toggle card yang diklik
+    card.classList.toggle('active');
+  });
+});
 // Efek fade in saat halaman dimuat
 window.addEventListener('load', () => {
   document.querySelector('.fade').classList.add('show');
