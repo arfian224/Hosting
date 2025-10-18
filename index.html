@@ -70,43 +70,84 @@ document.addEventListener("DOMContentLoaded", () => {
       </p>
     </div>
 
-    <div class="materi-grid">
-
-      <div class="card fade-in">
-        <img src="idea.png" alt="Dasar Dasar">
+ <!-- 1. Dasar-dasar -->
+      <div class="card">
+        <img src="idea.png" alt="Dasar Dasar" style="width:60px; margin-bottom:10px;">
         <h3>Dasar-dasar</h3>
         <p>Mengenal struktur dasar hosting: domain, server, DNS, dan file manager.</p>
+        <div class="card-detail">
+          <p>Control panel hosting memiliki beberapa struktur penting seperti <b>domain</b> untuk alamat web, 
+          <b>server</b> untuk penyimpanan data website, <b>DNS</b> untuk mengarahkan domain ke server, 
+          dan <b>file manager</b> untuk mengatur file website. Memahami dasar ini penting agar pengguna dapat 
+          mengelola website dengan efektif.</p>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="benefit.png" alt="Manfaat">
+      <!-- 2. Manfaat -->
+      <div class="card">
+        <img src="benefit.png" alt="Manfaat" style="width:60px; margin-bottom:10px;">
         <h3>Manfaat</h3>
         <p>Memudahkan pengelolaan website, monitoring, dan keamanan data pengguna.</p>
+        <div class="card-detail">
+          <p>Control panel hosting membantu pengguna mengelola berbagai aspek website tanpa perlu keahlian teknis tinggi. 
+          Fungsinya antara lain: mempermudah <b>instalasi website</b>, <b>monitoring penggunaan server</b>, 
+          serta <b>meningkatkan keamanan data</b> dengan fitur backup dan enkripsi SSL.</p>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="features.png" alt="Fitur-fitur">
+      <!-- 3. Fitur-fitur -->
+      <div class="card">
+        <img src="features.png" alt="Fitur-fitur" style="width:60px; margin-bottom:10px;">
         <h3>Fitur-fitur</h3>
         <p>File Manager, Email, Database, Backup, SSL, Statistik Pengunjung, dan DNS Zone Editor.</p>
+        <div class="card-detail">
+          <p>Beberapa fitur penting dalam control panel hosting meliputi: 
+          <b>File Manager</b> untuk mengelola berkas, <b>Database Manager</b> untuk membuat dan mengatur database, 
+          <b>Email Manager</b> untuk alamat email domain, <b>Backup</b> untuk menjaga data, dan 
+          <b>SSL</b> untuk keamanan situs. Semua fitur ini terintegrasi dalam satu tampilan mudah.</p>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="login.png" alt="Cara Mengakses">
+      <!-- 4. Cara Mengakses -->
+      <div class="card">
+        <img src="login.png" alt="Cara Mengakses" style="width:60px; margin-bottom:10px;">
         <h3>Cara Mengakses</h3>
-        <p>Bisa melalui URL seperti <b>yourdomain.com/cpanel</b> atau melalui portal hosting penyedia layanan.</p>
+        <p>Bisa melalui URL seperti <b>yourdomain.com/cpanel</b> atau portal hosting penyedia layanan.</p>
+        <div class="card-detail">
+          <p>Untuk mengakses control panel hosting, pengguna dapat mengetikkan URL seperti 
+          <code>yourdomain.com/cpanel</code> (untuk cPanel) atau 
+          <code>yourdomain.com:2083</code> di browser. Setelah itu, pengguna login menggunakan username 
+          dan password yang diberikan penyedia hosting.</p>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="workflow.png" alt="Alur Kerja">
+      <!-- 5. Alur Kerja -->
+      <div class="card">
+        <img src="workflow.png" alt="Alur Kerja" style="width:60px; margin-bottom:10px;">
         <h3>Alur Kerja</h3>
         <p>Pengguna login → pilih layanan (file, email, database) → lakukan konfigurasi → sistem server mengeksekusi perintah.</p>
+        <div class="card-detail">
+          <p>Proses kerja control panel hosting dimulai dari <b>login</b>, kemudian pengguna memilih layanan 
+          yang ingin diatur seperti file, email, atau database. Setelah konfigurasi selesai, 
+          control panel akan mengirimkan instruksi ke server agar perintah dieksekusi secara otomatis.</p>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="varieties.png" alt="Macam Macam">
+      <!-- 6. Macam-macam Control Panel -->
+      <div class="card">
+        <img src="varieties.png" alt="Macam-macam Control Panel" style="width:60px; margin-bottom:10px;">
         <h3>Macam-macam Control Panel</h3>
         <p>Beberapa panel populer: cPanel, Plesk, DirectAdmin, Webuzo, dan VestaCP.</p>
+        <div class="card-detail">
+          <p>Beberapa control panel populer antara lain: <b>cPanel</b> (paling umum dan user-friendly), 
+          <b>Plesk</b> (fleksibel untuk Windows/Linux), <b>DirectAdmin</b> (ringan dan cepat), 
+          <b>Webuzo</b> (mudah digunakan untuk VPS), dan <b>VestaCP</b> (gratis & open-source).</p>
+        </div>
       </div>
+
+    </div>
+  </div>
+</section>
 
     </div>
 
@@ -162,4 +203,5 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="script.js"></script>
 </body>
 </html>
+
 
